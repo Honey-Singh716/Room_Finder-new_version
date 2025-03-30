@@ -1,0 +1,47 @@
+/* Light theme (default) */
+:root {
+    --background: #ffffff;
+    --text: #333333;
+    --button-bg: #333333;
+    --button-text: #ffffff;
+    --transition: all 0.3s ease;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+    --background: #1a1a1a;
+    --text: #f0f0f0;
+    --button-bg: #f0f0f0;
+    --button-text: #1a1a1a;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    transition: var(--transition);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: var(--transition);
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
